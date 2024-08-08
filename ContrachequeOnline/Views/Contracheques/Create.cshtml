@@ -1,0 +1,74 @@
+﻿@model ContrachequeOnline.Models.Contracheque
+
+@using (Html.BeginForm())
+{
+    <div>
+        @Html.LabelFor(m => m.Salario)
+        @Html.TextBoxFor(m => m.Salario, new { required = "required" })
+    </div>
+    <div>
+        @Html.LabelFor(m => m.HorasExtras)
+        @Html.TextBoxFor(m => m.HorasExtras, new { required = "required" })
+    </div>
+    <div>
+        @Html.LabelFor(m => m.ValorHorasExtras)
+        @Html.TextBoxFor(m => m.ValorHorasExtras, new { required = "required" })
+    </div>
+    <div>
+        @Html.LabelFor(m => m.AdicionalNoturno)
+        @Html.TextBoxFor(m => m.AdicionalNoturno, new { required = "required" })
+    </div>
+    <div>
+        @Html.LabelFor(m => m.AdicionalInsalubridade)
+        @Html.TextBoxFor(m => m.AdicionalInsalubridade, new { required = "required" })
+    </div>
+    <div>
+        @Html.LabelFor(m => m.AdicionalPericulosidade)
+        @Html.TextBoxFor(m => m.AdicionalPericulosidade, new { required = "required" })
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Comissoes)
+        @Html.TextBoxFor(m => m.Comissoes, new { required = "required" })
+    </div>
+    <div>
+        @Html.LabelFor(m => m.BonusGratificacoes)
+        @Html.TextBoxFor(m => m.BonusGratificacoes, new { required = "required" })
+    </div>
+    <div>
+        @Html.LabelFor(m => m.PLR)
+        @Html.TextBoxFor(m => m.PLR, new { required = "required" })
+    </div>
+    <div>
+        @Html.LabelFor(m => m.AjudaCusto)
+        @Html.TextBoxFor(m => m.AjudaCusto, new { required = "required" })
+    </div>
+    <div>
+        @Html.LabelFor(m => m.ValeTransporte)
+        @Html.TextBoxFor(m => m.ValeTransporte, new { required = "required" })
+    </div>
+    <div>
+        @Html.LabelFor(m => m.ValeRefeicao)
+        @Html.TextBoxFor(m => m.ValeRefeicao, new { required = "required" })
+    </div>
+    <div>
+        @Html.LabelFor(m => m.PlanoSaudeEmpregador)
+        @Html.TextBoxFor(m => m.PlanoSaudeEmpregador, new { required = "required" })
+    </div>
+    <div>
+        @Html.LabelFor(m => m.PlanoOdontologicoEmpregador)
+        @Html.TextBoxFor(m => m.PlanoOdontologicoEmpregador, new { required = "required" })
+    </div>
+    <div>
+        @Html.LabelFor(m => m.SeguroVida)
+        @Html.TextBoxFor(m => m.SeguroVida, new { required = "required" })
+    </div>
+    <div>
+        @Html.LabelFor(m => m.AuxilioCreche)
+        @Html.TextBoxFor(m => m.AuxilioCreche, new { required = "required" })
+    </div>
+    <div>
+        @Html.LabelFor(m => m.AuxilioEducacao)
+        @Html.TextBoxFor(m => m.AuxilioEducacao, new { required = "required" })
+    </div>
+    <button type="submit">Salvar</button>
+}

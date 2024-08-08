@@ -1,0 +1,16 @@
+﻿@using (Html.BeginForm())
+{
+    <div>
+        <label for="cpf">CPF</label>
+        <input type="text" name="cpf" required />
+    </div>
+    <div>
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" required />
+    </div>
+    <button type="submit">Entrar</button>
+    @if (ViewBag.Error != null)
+    {
+        <div>@ViewBag.Error</div>
+    }
+}

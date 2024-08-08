@@ -1,0 +1,26 @@
+﻿@model IEnumerable<ContrachequeOnline.Models.Contracheque>
+
+<h2>Contracheques</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Salário</th>
+            <th>Horas Extras</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var contracheque in Model)
+        {
+            <tr>
+                <td>@contracheque.Salario</td>
+                <td>@contracheque.HorasExtras</td>
+                <td>
+                    @Html.ActionLink("Editar", "Edit", new { id = contracheque.ContrachequeId }) |
+                    @Html.ActionLink("Deletar", "Delete", new { id = contracheque.ContrachequeId })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a href="@Url.Action("Create")">Criar Novo Contracheque</a>
